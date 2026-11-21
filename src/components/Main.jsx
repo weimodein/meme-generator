@@ -1,6 +1,6 @@
 function Main() {
   return (
-    <main>
+    <main className="main">
       <div className="form">
         <label>
           Top Text

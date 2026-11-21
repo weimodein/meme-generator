@@ -27,6 +27,10 @@ body {
   margin-right: auto;
 }
 
+.main {
+  padding: 26px;
+}
+
 .form {
   display: grid;
   grid-template: auto auto / 1fr 1fr;
