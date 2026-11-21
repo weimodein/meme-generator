@@ -4,7 +4,7 @@ function Main() {
   const [meme, setMeme] = useState({
     topText: "One does not simply",
     bottomText: "Walk into Mordor",
-    imgUrl: "http://i.imgflip.com/1bij.jpg",
+    imageUrl: "http://i.imgflip.com/1bij.jpg",
   });
 
   return (
@@ -23,7 +23,7 @@ function Main() {
         <button>Get a new meme image 🖼</button>
       </div>
       <div className="meme">
-        <img src={meme.imgUrl} alt="Meme image" />
+        <img src={meme.imageUrl} alt="Meme image" />
         <span className="top">{meme.topText}</span>
         <span className="bottom">{meme.bottomText}</span>
       </div>
