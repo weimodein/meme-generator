@@ -17,10 +17,7 @@ function Main() {
   function getMeme() {
     const randIndex = Math.floor(Math.random() * memeImageList.length);
     const randUrl = memeImageList[randIndex].url;
-    setMeme((prevMeme) => ({
-      ...prevMeme,
-      imageUrl: randUrl,
-    }));
+    setMeme((prevMeme) => ({ ...prevMeme, imageUrl: randUrl }));
   }
 
   function handleChange(event) {
