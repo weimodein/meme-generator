@@ -7,12 +7,25 @@ function Main() {
     imageUrl: "http://i.imgflip.com/1bij.jpg",
   });
 
+  function handleChange(event) {
+    const { value } = event.currentTarget;
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      topText: value,
+    }));
+  }
+
   return (
     <main className="main">
       <div className="form">
         <label>
           Top Text
-          <input type="text" placeholder="One does not simply" name="topText" />
+          <input
+            type="text"
+            placeholder="One does not simply"
+            name="topText"
+            onChange={handleChange}
+          />
         </label>
 
         <label>
